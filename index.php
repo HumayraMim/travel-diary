@@ -5,9 +5,9 @@ require 'config/config.php';
 
 <html>
 <head>
-	<title>Travel</title>
+	<title>Travel Diary</title>
 </head>
 <body>
-	travel diary
+	Travel Diary
 </body>
 </html>
