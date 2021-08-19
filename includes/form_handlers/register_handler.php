@@ -30,6 +30,7 @@ $em2= str_replace(' ','',$em2);
 $em2=ucfirst(strtolower($em2));
 $_SESSION['reg_email2']=$em2;
 
+
 $password= strip_tags($_POST['reg_password']);
 $password2= strip_tags($_POST['reg_password2']);
 
