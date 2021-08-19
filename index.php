@@ -1,31 +1,13 @@
-<?php
-$con = mysqli_connect("localhost", "root", "", "social");
-if(mysqli_connect_errno()) {
-    echo "failed to connect: " . mysqli_connect_errno();
-
-}
-$query= mysqli_query($con, "INSERT INTO test VALUES(NULL, 'social app')");
-
-
+<?php  
+require 'config/config.php';
 
 ?>
 
-
-
-
-
-
-
-
-
-
-
 <html>
 <head>
-    <title>Travel</title>
+	<title>Travel</title>
 </head>
 <body>
-    travel diary
+	travel diary
 </body>
-
 </html>
