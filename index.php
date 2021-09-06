@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
-<?php  
-require 'config/config.php';
-=======
 <?php 
 include("includes/header.php");
->>>>>>> Stashed changes
 
 ?>
 
