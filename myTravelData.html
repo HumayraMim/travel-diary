@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Diary</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Login Area -->
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-md-6">
+                    <div class="login-box">
+                        <div class="title">
+                            <h3>Store Your Data</h3>
+                        </div>
+                        <form action="myTravelDataConnect.php" method="POST" class="form-1">
+
+                            <div class="row mt-4 form-group">
+                                <div class="col-12">
+                                    <label>Date</label>
+                                    <input type="text" placeholder="Journey Date" name="date">
+                                </div>
+                            </div>
+
+                            <div class="row mt-4 form-group">
+                                <div class="col-12">
+                                    <label>Cost</label>
+                                    <input type="number" placeholder="Travel Cost" name="cost">
+                                </div>
+                            </div>
+
+                            <div class="row mt-4 form-group">
+                                <div class="col-12">
+                                    <label>Place</label>
+                                    <input type="text" placeholder="Travel Place" name="place">
+                                </div>
+                            </div>
+
+                            <div class="row mt-4 form-group">
+                                <div class="col-12">
+                                    <label>Description</label>
+                                    <input type="text" placeholder="Travel Description" name="description">
+                                </div>
+                            </div>
+
+                            <div class="row mt-4 form-group">
+                                <div class="col-12 text-center">
+                                    <button type="submit" name="submit" class="btn-2">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+
+
+
+
+
+    <script src="js/jquery3.5.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
