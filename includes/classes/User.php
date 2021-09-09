@@ -13,6 +13,12 @@ class User {
 		return $this->user['username'];
 	}
 
+	public function getNumberOfFriendRequests() {
+		$username = $this->user['username'];
+		$query = mysqli_query($this->con, "SELECT * FROM friend_requests WHERE user_to='$username'");
+		return mysqli_num_rows($query);
+	}
+
 	public function getNumPosts() {
 		$username = $this->user['username'];
 		$query = mysqli_query($this->con, "SELECT num_posts FROM users WHERE username='$username'");
@@ -21,10 +27,10 @@ class User {
 	}
 
 	public function getFirstAndLastName() {
-		$username =isset( $this->user['username']);
+		$username = $this->user['username'];
 		$query = mysqli_query($this->con, "SELECT first_name, last_name FROM users WHERE username='$username'");
 		$row = mysqli_fetch_array($query);
-		     if ($row !== null ) return $row['first_name'] . " " . $row['last_name'];
+		return $row['first_name'] . " " . $row['last_name'];
 	}
 
 	public function getProfilePic() {
@@ -42,11 +48,11 @@ class User {
 	}
 
 	public function isClosed() {
-		$username =isset( $this->user['username']);
+		$username = $this->user['username'];
 		$query = mysqli_query($this->con, "SELECT user_closed FROM users WHERE username='$username'");
 		$row = mysqli_fetch_array($query);
 
-		if ($row !== null && $row['user_closed'] =='yes' )
+		if($row['user_closed'] == 'yes')
 			return true;
 		else 
 			return false;

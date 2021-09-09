@@ -38,7 +38,7 @@ require 'includes/form_handlers/login_handler.php';
 		<div class="login_box">
 
 			<div class="login_header">
-				<h1>Swirlfeed!</h1>
+				<h1>Travel Diary</h1>
 				Login or sign up below!
 			</div>
 			<br>

@@ -21,11 +21,19 @@ if(isset($_POST['post'])){
 			<br>
 			<?php echo "Posts: " . $user['num_posts']. "<br>"; 
 			echo "Likes: " . $user['num_likes'];
+			echo "<br>";
 
 			?>
+			
+           <div>
+	 	<a href="login.html">My Travel Record</a>
 		</div>
 
-	</div>
+		</div>
+
+		</div>
+
+	
 
 	<div class="main_column column">
 		<form class="post_form" action="index.php" method="POST">
